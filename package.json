@@ -1,0 +1,29 @@
+{
+    "name": "bibjs",
+    "description": "A library of DFA, NFA, Lexical Analyser, which can be used to convert .bib files.",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Epsirom/BibJS"
+    },
+    "author": {
+        "name": "Huarong Chen",
+        "email": "i@chr.asia",
+        "url": "http://chr.asia"
+    },
+    "main": "./index",
+    "scripts": {
+        "test": "node ./tests/test-bib.js"
+    },
+    "engines": {
+        "node": ">=0.10.24"
+    },
+    "readme": "Just enjoy it!",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/Epsirom/BibJS/issues"
+    },
+    "homepage": "https://github.com/Epsirom/BibJS",
+    "_id": "bibjs@0.0.1",
+    "_from": "bibjs@*"
+}
