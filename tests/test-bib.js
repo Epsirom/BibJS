@@ -2,23 +2,38 @@
  * Created by Epsirom on 14-5-6.
  */
 
-var str = '@INPROCEEDINGS         {       audio2tag:icme11               ,       \n' +
-    '    AUTHOR              = "Karydis Loannis and Nanopoulos Alexandros",\n' +
-    '    TITLE = "Audio-to-tag mapping: a novel approach for music similarity computation"     ,     \n' +
-    '    BOOKTITLE = "IEEE International Conference on Multimedia and Expo",\n' +
-    '    PAGES = {1-6}     ,\n' +
-    '    YEAR = {2011}	}';
 
-var Scanner = require('../lib/scanner/scanner');
+var BibDad = require('../lib/bibdad');
 
-var scanner = Scanner(str);
+var fs = require('fs');
 
-do {
+var inputFileName = './tests/data/example.bib';
+var outputFileName = './tests/data/result.txt';
 
-    scanner.scan();
+var bib = BibDad();
 
-    console.log(scanner.token.unitName);
-    console.log(scanner.token.innerProp);
+try {
+    fs.truncateSync(outputFileName, 0);
+} catch (err) {
+    console.log('Prepare output file failed: ' + err.toString());
+}
 
-    console.log('');
-} while (scanner.token.unitName >= 0);
+try {
+    var counter = 0;
+    bib.loadStr(fs.readFileSync(inputFileName));
+    console.log('Input is ready!');
+    while (bib.analyze()) {
+        ++counter;
+        if (bib.validate()) {
+            var output = bib.output();
+            console.log(counter + ': ' + output);
+            fs.appendFileSync(outputFileName, output + '\n');
+        } else {
+            console.log(counter + ': UNSUPPORTED OR ERROR OCCURRED!');
+        }
+        bib.reset();
+    }
+    console.log('Success! All output go to ' + outputFileName);
+} catch (err) {
+    console.log('Failed: ' + err.toString());
+}
