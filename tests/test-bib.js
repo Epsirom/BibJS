@@ -6,6 +6,8 @@
 var BibDad = require('../lib/bibdad');
 
 var fs = require('fs');
+var TokenTypes = require('../lib/scanner/token-types');
+var TokenType = TokenTypes.Token;
 
 var inputFileName = './tests/data/example.bib';
 var outputFileName = './tests/data/result.txt';
@@ -27,13 +29,31 @@ try {
         if (bib.validate()) {
             var output = bib.output();
             console.log(counter + ': ' + output);
-            fs.appendFileSync(outputFileName, output + '\n');
+            fs.appendFileSync(outputFileName, output + '\r\n');
         } else {
-            console.log(counter + ': UNSUPPORTED OR ERROR OCCURRED!');
+            console.log(counter + ': UNSUPPORTED');
         }
         bib.reset();
     }
-    console.log('Success! All output go to ' + outputFileName);
+    if (!(bib.automata.isAccept()) && bib.scanner.token.unitName != TokenType.NO_MORE) {
+        console.log('Error occurred at byte ' + bib.scanner.pointer);
+        console.log('   ...' +
+            (function(str) {
+                var rtn = '';
+                for (var i = 0, len = str.length; i < len; ++i) {
+                    if (str[i] == '\n' || str[i] == '\r' || str[i] == '\t') {
+                        rtn += ' ';
+                    } else {
+                        rtn += str[i];
+                    }
+                }
+                return rtn;
+            })(bib.scanner.str.substr(bib.scanner.pointer - 15, 31)) + '...'
+        );
+        console.log('   ...               ^               ...');
+    } else {
+        console.log('Success! All output go to ' + outputFileName);
+    }
 } catch (err) {
     console.log('Failed: ' + err.toString());
 }

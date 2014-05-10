@@ -1,12 +1,12 @@
 Taher H. Haveliwala. Topic-sensitive pagerank. Proceedings of the 11th international conference on World Wide Web. 517-526. 2002.
-Jian Wang and Yi Zhang. Opportunity models for e-commerce recommendation: right product, right time. Proceedings of the 36th international ACM SIGIR conference on Research and development in information retrieval. 303-312. 2013.
-Amos Azaria and Avinatan Hassidim and Sarit Kraus and Adi Eshkol and Ofer Weintraub and Irit Netanely. Movie recommender system for profit maximization. Proceedings of the 7th annual ACM international workshop on Web information and data management. 2-9. 2005.
-Sean M. McNee and John Riedl and Joseph A. Konstan. Being accurate is not enough: how accuracy metrics have hurt recommender systems. Extended Abstracts on Human Factors in Computing Systems. 1097-1101. 2006.
-Kerstin Bischoff and Claudiu S. Firan and Raluca Paiu. Deriving music theme annotations from user tags. International Conference on World Wide Web. 1193-1194. 2009.
+Jian Wang, Yi Zhang. Opportunity models for e-commerce recommendation: right product, right time. Proceedings of the 36th international ACM SIGIR conference on Research and development in information retrieval. 303-312. 2013.
+Amos Azaria, Avinatan Hassidim, Sarit Kraus, Adi Eshkol, Ofer Weintraub, Irit Netanely. Movie recommender system for profit maximization. Proceedings of the 7th annual ACM international workshop on Web information and data management. 2-9. 2005.
+Sean M. McNee, John Riedl, Joseph A. Konstan. Being accurate is not enough: how accuracy metrics have hurt recommender systems. Extended Abstracts on Human Factors in Computing Systems. 1097-1101. 2006.
+Kerstin Bischoff, Claudiu S. Firan, Raluca Paiu. Deriving music theme annotations from user tags. International Conference on World Wide Web. 1193-1194. 2009.
 George Karypis. Evaluation of item-based top-N recommendation algorithms. Proceedings of the tenth international conference on Information and knowledge management. 247-254. 2001.
-Karydis Loannis and Nanopoulos Alexandros. Audio-to-tag mapping: a novel approach for music similarity computation. IEEE International Conference on Multimedia and Expo. 1-6. 2011.
-James Davidson and Benjamin Liebald and Junning Liu. The youtube video recommendation system. ACM Conference on Recommender System. 293-296. 2010.
-Fabricio Lemos and Rafael Carmo and Windson Viana and Rossana Andrade. Towards a context-aware photo recommender system. Proceedings of the 4th Workshop on Context-Aware Recommender Systems. 2012.
-Leman Akoglu and Christos Faloutsos. ValuePick: Towards a Value-Oriented Dual-Goal Recommender System. IEEE International Conference on Data Mining Workshops (ICDMW). 1151-1158. 2010.
-Bin Xu and Jiajun Bu and Chun Chen and Deng Cai. An exploration of improving collaborative recommender systems via user-item subgroups. Proceedings of the 21st international conference on World Wide Web. 21-30. 2012.
-Ulrich Paquet and Noam Koenigstein. One-class collaborative filtering with random graphs. Proceedings of the 22nd international conference on World Wide Web. 999-1008. 2013.
+Karydis Loannis, Nanopoulos Alexandros. Audio-to-tag mapping: a novel approach for music similarity computation. IEEE International Conference on Multimedia and Expo. 1-6. 2011.
+James Davidson, Benjamin Liebald, Junning Liu. The youtube video recommendation system. ACM Conference on Recommender System. 293-296. 2010.
+Fabricio Lemos, Rafael Carmo, Windson Viana, Rossana Andrade. Towards a context-aware photo recommender system. Proceedings of the 4th Workshop on Context-Aware Recommender Systems. 2012.
+Leman Akoglu, Christos Faloutsos. ValuePick: Towards a Value-Oriented Dual-Goal Recommender System. IEEE International Conference on Data Mining Workshops (ICDMW). 1151-1158. 2010.
+Bin Xu, Jiajun Bu, Chun Chen, Deng Cai. An exploration of improving collaborative recommender systems via user-item subgroups. Proceedings of the 21st international conference on World Wide Web. 21-30. 2012.
+Ulrich Paquet, Noam Koenigstein. One-class collaborative filtering with random graphs. Proceedings of the 22nd international conference on World Wide Web. 999-1008. 2013.
